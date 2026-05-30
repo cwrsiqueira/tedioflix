@@ -5,6 +5,8 @@
 Projeto desenvolvido para o hackathon **Codecon Universe 26** (maio 2026), categoria **"Absurdo com Propósito"**.  
 Equipe: **Vamo lá só eu** — Carlos Wagner Rodrigues Siqueira.
 
+🌐 **Demo em produção:** [tedioflix.com](https://tedioflix.com)
+
 ---
 
 ## O que é
@@ -39,7 +41,7 @@ A graça está no contraste — a produção é caprichada, o conteúdo é nulo.
 
 ## Setup (≤ 5 minutos)
 
-**Pré-requisitos:** PHP 8.2+, Composer, Node 18+, npm.
+**Pré-requisitos:** PHP 8.3+, Composer, Node 18+, npm.
 
 ```bash
 # 1. Clonar o repositório
