@@ -26,7 +26,7 @@ export default function Watch({ video, related }) {
                 {/* Header */}
                 <header className="flex items-center gap-4 px-6 md:px-10 py-4 bg-black/80">
                     <Link
-                        href={route('home')}
+                        href={route('catalogo')}
                         className="flex items-center gap-1 text-gray-400 hover:text-white transition-colors text-sm"
                     >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@ export default function Watch({ video, related }) {
                         </svg>
                         Voltar
                     </Link>
-                    <span className="text-xl font-black text-red-600 tracking-tighter">TédioFlix</span>
+                    <Link href={route('landing')} className="text-xl font-black text-red-600 tracking-tighter">TédioFlix</Link>
                 </header>
 
                 {/* Player */}
