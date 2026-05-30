@@ -58,6 +58,16 @@ Ordem é MVP primeiro (etapas 0→3 fazem o app rodar ponta a ponta); firula vem
 - `.htaccess` na raiz redirecionando para `/public`.
 - `public/build` incluído no repositório (sem Node.js no servidor).
 
+## ✅ Extras pós-plano (2026-05-30)
+- **Landing page** (`/`): logo gigante, botão "Começar a Não Fazer Nada", toggle "Saiba mais"
+  com texto filosófico (Camus, Heidegger, Wu Wei, Charlie Shackleton). Catálogo movido para `/catalogo`.
+- **Sugestões dos tutores:**
+  - Comentário de uma linha em `Video.php` ("Receber valores é o oposto de não receber valores.")
+  - Descrições entediantes por vídeo no seed + coluna `description` no banco + exibição no Watch
+  - `docs/APRESENTACAO.md` criado para o pitch ao vivo (se top 5, domingo 17h)
+- **Vídeo demo:** gravado e aprovado. ✓
+- **Devpost:** preencher domingo de manhã antes das 13h.
+
 ---
 
 ## Se faltar tempo (plano de corte)

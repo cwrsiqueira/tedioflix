@@ -54,3 +54,17 @@
 - **Decisão:** botão "Emitir Laudo de Tédio" na página Watch, amarelo, com ícone de escudo.
   Subtexto: "Certificação oficial pela Agência Nacional de Conteúdo Entediante (ANCE)".
 - **Impacto:** requisito cumprido; coerente com o tom do projeto.
+
+### [2026-05-30] Landing page separada do catálogo
+- **Contexto:** necessidade de tela inicial impactante para o pitch; catálogo é denso demais
+  como primeira impressão.
+- **Decisão:** rota `/` vira landing (logo gigante, botão, toggle "Saiba mais" com texto
+  filosófico sobre tédio — Camus, Heidegger, Wu Wei, Charlie Shackleton). Catálogo move para `/catalogo`.
+- **Impacto:** fluxo do pitch: landing → catálogo → player. Mais dramático na apresentação.
+
+### [2026-05-30] Descrições entediantes por vídeo
+- **Contexto:** sugestão dos tutores para aprofundar a piada e entediar o júri com mais camadas.
+- **Decisão:** campo `description` (text, nullable) adicionado via nova migration; seed atualizado
+  com 24 descrições em tom sério-burocrático; exibidas no Watch abaixo da duração fake.
+- **Impacto:** cada vídeo tem agora uma sinopse oficial da ANCE. Ex: "A água atinge 100°C e
+  permanece assim. Não há resolução porque o processo é cíclico por natureza."
