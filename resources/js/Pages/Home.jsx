@@ -134,7 +134,7 @@ export default function Home({ categories }) {
                 )}
 
                 {/* Catálogo */}
-                <section className="relative z-10 -mt-16 pb-16">
+                <section className="relative z-10 pb-16">
 
                     {/* Continue Assistindo */}
                     {watched.length > 0 && (
