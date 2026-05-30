@@ -43,6 +43,11 @@ A graça está no contraste — a produção é caprichada, o conteúdo é nulo.
 
 **Pré-requisitos:** PHP 8.3+, Composer, Node 18+, npm.
 
+> **Windows:** verifique se as extensões `fileinfo` e `zip` estão habilitadas no `php.ini`.
+> Abra o arquivo (rode `php --ini` para achar o caminho) e remova o `;` das linhas:
+> `;extension=fileinfo` → `extension=fileinfo`
+> `;extension=zip` → `extension=zip`
+
 ```bash
 # 1. Clonar o repositório
 git clone https://github.com/cwrsiqueira/tedioflix.git
@@ -58,11 +63,15 @@ npm install
 cp .env.example .env
 php artisan key:generate
 
-# 5. Criar banco e popular catálogo
+# 5. Criar o arquivo do banco de dados
+php -r "file_put_contents('database/database.sqlite', '');"
+
+# 6. Popular o catálogo
 php artisan migrate --seed --no-interaction
 
-# 6. Rodar em modo desenvolvimento
-php artisan serve &
+# 7. Rodar em modo desenvolvimento (dois terminais separados)
+php artisan serve
+# em outro terminal:
 npm run dev
 ```
 
