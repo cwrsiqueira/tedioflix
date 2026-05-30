@@ -99,8 +99,8 @@ export default function Home({ categories }) {
                     <span className="text-2xl font-black text-red-600 tracking-tighter select-none">TédioFlix</span>
                     <nav className="hidden md:flex gap-5 text-sm text-gray-300">
                         <a href="/" className="text-white font-medium">Início</a>
-                        <span className="cursor-default">Categorias</span>
-                        <span className="cursor-default">Novidades</span>
+                        <span className="cursor-pointer">Categorias</span>
+                        <span className="cursor-pointer">Novidades</span>
                     </nav>
                 </header>
 
