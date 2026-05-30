@@ -1,4 +1,4 @@
-import{c as e,n as t,r as n,t as r,u as i}from"./app-BXtOQZ90.js";var a=i(e(),1),o=r(),s=`
+import{c as e,n as t,r as n,t as r,u as i}from"./app-Byp5jkNS.js";var a=i(e(),1),o=r(),s=`
 O ser humano contemporâneo vive em estado de hiperatividade cognitiva permanente. Notificações. Alertas. Atualizações. O psicólogo Mihaly Csikszentmihalyi descreveu o "estado de flow" como condição ideal de engajamento humano — aquele momento em que desafio e habilidade se equilibram perfeitamente. O TédioFlix não oferece isso.
 
 O TédioFlix oferece o oposto.

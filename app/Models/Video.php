@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Video extends Model
 {
-    protected $fillable = ['category', 'title', 'youtube_id'];
+    // os campos que podem receber valores. Receber valores é o oposto de não receber valores.
+    protected $fillable = ['category', 'title', 'youtube_id', 'description'];
 }

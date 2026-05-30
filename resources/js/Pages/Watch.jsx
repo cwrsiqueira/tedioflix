@@ -57,6 +57,12 @@ export default function Watch({ video, related }) {
                         <h1 className="text-2xl font-bold text-white mb-1">{video.title}</h1>
                         <p className="text-gray-500 text-sm mb-4">{fakeDuration(video.id)}</p>
 
+                        {video.description && (
+                            <p className="text-gray-500 text-sm leading-relaxed border-t border-gray-800 pt-4 mt-2 mb-4">
+                                {video.description}
+                            </p>
+                        )}
+
                         <div className="flex items-center gap-3 flex-wrap">
                             <button
                                 type="button"
