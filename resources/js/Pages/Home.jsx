@@ -1,4 +1,4 @@
-import { Head } from '@inertiajs/react';
+import { Head, router } from '@inertiajs/react';
 
 function VideoCard({ video, onClick }) {
     return (
@@ -49,7 +49,7 @@ export default function Home({ categories }) {
     const featuredVideo = categoryEntries[0]?.[1]?.[0];
 
     function handleVideoClick(video) {
-        window.location.href = `/assistir/${video.id}`;
+        router.visit(route('watch', video.id));
     }
 
     return (

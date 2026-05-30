@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WatchController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/assistir/{video}', WatchController::class)->name('watch');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
