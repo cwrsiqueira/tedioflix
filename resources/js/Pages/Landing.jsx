@@ -26,11 +26,21 @@ export default function Landing() {
 
     return (
         <>
-            <Head title="TédioFlix" />
+            <Head>
+                <title>TédioFlix</title>
+                <meta property="og:title" content="TédioFlix — Garantia Contratual de Zero Adrenalina" />
+                <meta property="og:description" content="O único serviço de streaming com garantia contratual de zero adrenalina." />
+                <meta property="og:image" content="/logo_tedioflix.png" />
+                <meta property="og:type" content="website" />
+            </Head>
             <div className="min-h-screen bg-gray-950 text-white flex flex-col items-center justify-center px-6 relative overflow-hidden">
 
-                {/* Gradiente de fundo sutil */}
-                <div className="absolute inset-0 bg-gradient-radial from-red-950/20 via-transparent to-transparent pointer-events-none" />
+                {/* Fundo: imagem da logo com overlay escuro */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: 'url(/logo_tedioflix.png)' }}
+                />
+                <div className="absolute inset-0 bg-black/75" />
 
                 {/* Conteúdo central */}
                 <div className="relative z-10 flex flex-col items-center text-center max-w-xl w-full">
